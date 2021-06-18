@@ -22,6 +22,12 @@ const swiper1 = new Swiper(".swiper-container1", {
       slidesPerView: 1.5,
       // centeredSlides: true,
     },
+    425: {
+      slidesPerView: 1.25,
+    },
+    200: {
+      slidesPerView: 1,
+    },
   },
 });
 const swiper2 = new Swiper(".swiper-container2", {
@@ -48,5 +54,36 @@ const swiper2 = new Swiper(".swiper-container2", {
       centeredSlides: false,
       spaceBetween: 78,
     },
+    768: {
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+    428: {
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      slidesPerView: 2,
+      centeredSlides: false,
+    },
+    200: {
+       allowSlideNext: true,
+      allowSlidePrev: true,
+      slidesPerView: 1,
+      centeredSlides: false,
+    }
   },
 });
+const burgerButtonStart = document.querySelector(".burger__button")
+const burgerContent = document.querySelector(".burger__content")
+const burgerClosed = document.querySelector(".burger__button_closed")
+burgerButtonStart.addEventListener('click', () => {
+  if (!burgerContent.classList.contains('active')) {
+    burgerContent.classList.add('active')
+  }
+})
+burgerClosed.addEventListener('click', () => {
+  if (burgerContent.classList.contains('active')) {
+    burgerContent.classList.remove('active')
+  }
+})

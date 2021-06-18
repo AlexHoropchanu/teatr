@@ -75,6 +75,100 @@ p {
   margin: 0 auto;
 }
 
+.active {
+  display: block !important;
+}
+
+.burger {
+  display: none;
+}
+
+.burger__button {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.burger__tell {
+  text-decoration: none;
+  position: absolute;
+  top: 56px;
+  right: 39px;
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-bottom: 2px solid #d1a954;
+}
+
+.burger__content {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background: #333333;
+  display: none;
+}
+
+.burger__content ul {
+  list-style-type: none;
+  margin-left: 40px;
+  margin-top: 140px;
+}
+
+.burger__content ul li {
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.burger__content ul li:last-child {
+  margin-bottom: 0;
+}
+
+.burger__content ul li a {
+  text-decoration: none;
+}
+
+.burger__content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.burger__content div img:first-child {
+  padding-right: 60px;
+  margin-bottom: 50px;
+}
+
+.burger__content div img:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+.burger__button_closed {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
 aside {
   width: 100vh;
   height: 150px;
@@ -349,7 +443,7 @@ main {
   position: absolute;
   top: 40px;
   left: 40px;
-  font-family: " Open Sans Condensed";
+  font-family: "Open Sans Condensed";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -362,8 +456,7 @@ main {
 .our-supplies__top__subtitle {
   position: absolute;
   bottom: 120px;
-  left: 40px;
-  font-family: Open Sans Condensed;
+  font-family: "Open Sans Condensed";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -461,6 +554,12 @@ footer {
 
 footer h2 {
   padding-bottom: 100px;
+}
+
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__left ul {
@@ -601,11 +700,14 @@ form textarea {
   .about__theatre__bottom__left {
     margin-right: 30px;
   }
+  .about__theatre__bottom__center__top__wrapper h5 {
+    margin-bottom: 25px;
+  }
   .our-supplies__top {
     max-width: 690px;
   }
   .our-supplies__top img {
-    width: inherit;
+    width: 100%;
     height: 550px;
   }
   .footer__wrapper {
@@ -636,6 +738,291 @@ form textarea {
   }
   .footer__left__right {
     text-align: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .burger {
+    display: block;
+  }
+  aside {
+    display: none;
+  }
+  .top__header__nav {
+    display: none;
+  }
+  .top__wrapper {
+    padding: 0;
+  }
+  .top__bottom__left {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .top__bottom {
+    margin-top: 169px;
+  }
+  .about__theatre {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .about__theatre__bottom {
+    margin-top: 60px;
+  }
+  .our-supplies__top {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  .our-supplies__bottom__right p {
+    padding-left: 20px;
+    max-width: 388px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+  .our-supplies__bottom__right ul {
+    padding-left: 20px;
+    padding-top: 190px;
+  }
+  .partners {
+    padding-top: 90px;
+    padding-bottom: 10px;
+  }
+  .partners__slider__wrapper {
+    margin-top: 60px;
+  }
+  footer {
+    padding-top: 0;
+  }
+  footer h2 {
+    padding-bottom: 60px;
+  }
+  .footer__right__wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger__content ul {
+    margin-top: 70px;
+  }
+  .burger__content {
+    height: 72vh;
+  }
+  .top {
+    height: 100%;
+  }
+  .top__bottom__left {
+    max-width: 511px;
+  }
+  .top__bottom {
+    margin-top: 114px;
+    padding-bottom: 107px;
+  }
+  .about__theatre {
+    padding-bottom: 80px;
+  }
+  .about__theatre__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__theatre__bottom__left {
+    max-width: 505px;
+    width: auto;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .about__theatre__bottom__center__top__wrapper {
+    max-width: 325px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about__theatre__bottom__center {
+    max-width: 325px;
+    width: 100%;
+  }
+  .about__theatre__bottom__center__top h3 {
+    text-align: center;
+  }
+  .our-supplies__bottom__left {
+    padding-left: 33px;
+  }
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 509px;
+    margin: 0 auto;
+  }
+  footer {
+    max-width: 509px !important;
+  }
+  .our-supplies__top {
+    max-width: 509px;
+  }
+  .footer__right__form-right {
+    max-width: 509px;
+    width: 100%;
+  }
+  .footer__wrapper {
+    padding-bottom: 60px;
+  }
+  form input {
+    margin-right: 0;
+    width: 100%;
+    max-width: 230px;
+  }
+  form textarea {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 40px;
+  }
+  .form__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .footer__right__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__right__wrapper .button {
+    margin-bottom: 30px;
+  }
+  .footer__right p {
+    max-width: 435px;
+    text-align: center;
+  }
+  .footer__right__wrapper {
+    margin-bottom: 50px;
+  }
+  .footer__left {
+    max-width: 509px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .top__bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .about__theatre {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .our-supplies__top {
+    max-width: 100%;
+  }
+  h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .our-supplies__bottom__left {
+    padding-left: 20px;
+  }
+  .our-supplies__bottom__right {
+    padding-right: 20px;
+  }
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .form__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form input {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer__left ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__left__left {
+    text-align: center;
+  }
+  .footer__left__right {
+    text-align: center;
+  }
+  .our-supplies__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .our-supplies__bottom__left {
+    padding-bottom: 0;
+    padding-top: 40px;
+  }
+  .our-supplies__bottom__right {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .our-supplies__bottom__right ul {
+    padding-top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners__slider__wrapper img {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .burger__content {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 376px) {
+  h1 {
+    font-size: 57px;
+  }
+  .about__theatre__bottom__center__top__wrapper div {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
