@@ -447,7 +447,7 @@ footer {
 .footer__left ul {
   list-style-type: none;
   li {
-    font-family: " Open Sans Condensed";
+    font-family: "Open Sans Condensed";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -503,6 +503,7 @@ form {
     display: block;
     margin-bottom: 30px;
     padding: 0 15px;
+    color: #989898;
   }
   textarea {
     padding: 10px 15px;
@@ -510,6 +511,7 @@ form {
     height: 100px;
     background: #444444;
     border: 1px solid #616161;
+    color: #989898;
   }
 }
 .footer__bottom {
@@ -656,8 +658,20 @@ form {
   }
 }
 @media (max-width: 768px) {
+  // .last__swiper {
+  //   max-width: 200px;
+  // }
+  .partners {
+    max-width: 510px;
+  }
   .burger__content ul {
     margin-top: 70px;
+  }
+  .our-supplies__bottom {
+    align-items: center;
+  }
+  .our-supplies__bottom__right ul {
+    padding-top: 0;
   }
   .burger__content {
     height: 72vh;
@@ -699,7 +713,7 @@ form {
     text-align: center;
   }
   .our-supplies__bottom__left {
-    padding-left: 33px;
+    padding-left: 99px;
   }
   form {
     flex-direction: column;
@@ -722,8 +736,7 @@ form {
   }
   form input {
     margin-right: 0;
-    width: 100%;
-    max-width: 230px;
+    width: 230px;
   }
   form textarea {
     width: 100%;
@@ -755,6 +768,13 @@ form {
   }
 }
 @media (max-width: 560px) {
+  .swiper-container1 {
+    overflow: hidden;
+  }
+  .our-supplies__top {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
   .top__bottom {
     padding-left: 20px;
     padding-right: 20px;
@@ -790,6 +810,12 @@ form {
   }
 }
 @media (max-width: 450px) {
+  .last__swiper {
+    max-width: 200px;
+  }
+  .partners {
+    max-width: 510px;
+  }
   .footer__left ul {
     flex-direction: column;
   }
@@ -800,20 +826,23 @@ form {
     text-align: center;
   }
   .our-supplies__bottom {
-    flex-direction: column;
+    align-items: center;
   }
   .our-supplies__bottom__left {
-    padding-bottom: 0;
-    padding-top: 40px;
+    // padding-bottom: 0;
+    // padding-top: 40px;
+    font-size: 60px;
   }
   .our-supplies__bottom__right {
-    text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    p {
+      font-size: 20px;
+    }
   }
   .our-supplies__bottom__right ul {
     padding-top: 0;
-    justify-content: center;
+    padding-left: 20px;
   }
   .partners__slider__wrapper img {
     display: block;
@@ -829,6 +858,15 @@ form {
   }
 }
 @media (max-width: 376px) {
+  .our-supplies__bottom__left ul {
+    font-size: 50px;
+  }
+  .our-supplies__bottom__right ul li {
+    margin-right: 10px;
+  }
+  .our-supplies__bottom__right ul li img {
+    width: 20px;
+  }
   h1 {
     font-size: 57px;
   }

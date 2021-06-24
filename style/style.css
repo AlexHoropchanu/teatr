@@ -567,7 +567,7 @@ footer h2 {
 }
 
 .footer__left ul li {
-  font-family: " Open Sans Condensed";
+  font-family: "Open Sans Condensed";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -638,6 +638,7 @@ form input {
   display: block;
   margin-bottom: 30px;
   padding: 0 15px;
+  color: #989898;
 }
 
 form textarea {
@@ -646,6 +647,7 @@ form textarea {
   height: 100px;
   background: #444444;
   border: 1px solid #616161;
+  color: #989898;
 }
 
 .footer__bottom {
@@ -805,8 +807,19 @@ form textarea {
 }
 
 @media (max-width: 768px) {
+  .partners {
+    max-width: 510px;
+  }
   .burger__content ul {
     margin-top: 70px;
+  }
+  .our-supplies__bottom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-supplies__bottom__right ul {
+    padding-top: 0;
   }
   .burger__content {
     height: 72vh;
@@ -857,7 +870,7 @@ form textarea {
     text-align: center;
   }
   .our-supplies__bottom__left {
-    padding-left: 33px;
+    padding-left: 99px;
   }
   form {
     -webkit-box-orient: vertical;
@@ -885,8 +898,7 @@ form textarea {
   }
   form input {
     margin-right: 0;
-    width: 100%;
-    max-width: 230px;
+    width: 230px;
   }
   form textarea {
     width: 100%;
@@ -926,6 +938,13 @@ form textarea {
 }
 
 @media (max-width: 560px) {
+  .swiper-container1 {
+    overflow: hidden;
+  }
+  .our-supplies__top {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
   .top__bottom {
     padding-left: 20px;
     padding-right: 20px;
@@ -965,6 +984,12 @@ form textarea {
 }
 
 @media (max-width: 450px) {
+  .last__swiper {
+    max-width: 200px;
+  }
+  .partners {
+    max-width: 510px;
+  }
   .footer__left ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -978,25 +1003,23 @@ form textarea {
     text-align: center;
   }
   .our-supplies__bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .our-supplies__bottom__left {
-    padding-bottom: 0;
-    padding-top: 40px;
+    font-size: 60px;
   }
   .our-supplies__bottom__right {
-    text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
   }
+  .our-supplies__bottom__right p {
+    font-size: 20px;
+  }
   .our-supplies__bottom__right ul {
     padding-top: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding-left: 20px;
   }
   .partners__slider__wrapper img {
     display: block;
@@ -1018,6 +1041,15 @@ form textarea {
 }
 
 @media (max-width: 376px) {
+  .our-supplies__bottom__left ul {
+    font-size: 50px;
+  }
+  .our-supplies__bottom__right ul li {
+    margin-right: 10px;
+  }
+  .our-supplies__bottom__right ul li img {
+    width: 20px;
+  }
   h1 {
     font-size: 57px;
   }

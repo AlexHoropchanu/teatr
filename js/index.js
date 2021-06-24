@@ -67,23 +67,23 @@ const swiper2 = new Swiper(".swiper-container2", {
       centeredSlides: false,
     },
     200: {
-       allowSlideNext: true,
+      allowSlideNext: true,
       allowSlidePrev: true,
       slidesPerView: 1,
       centeredSlides: false,
-    }
+    },
   },
 });
-const burgerButtonStart = document.querySelector(".burger__button")
-const burgerContent = document.querySelector(".burger__content")
-const burgerClosed = document.querySelector(".burger__button_closed")
-burgerButtonStart.addEventListener('click', () => {
-  if (!burgerContent.classList.contains('active')) {
-    burgerContent.classList.add('active')
+const burgerButtonStart = document.querySelector(".burger__button");
+const burgerContent = document.querySelector(".burger__content");
+const burgerClosed = document.querySelector(".burger__button_closed");
+burgerButtonStart.addEventListener("click", () => {
+  if (!burgerContent.classList.contains("active")) {
+    burgerContent.classList.add("active");
   }
-})
-burgerClosed.addEventListener('click', () => {
-  if (burgerContent.classList.contains('active')) {
-    burgerContent.classList.remove('active')
+});
+burgerClosed.addEventListener("click", () => {
+  if (burgerContent.classList.contains("active")) {
+    burgerContent.classList.remove("active");
   }
-})
+});
